@@ -12,22 +12,22 @@
         <header>Registration Form</header>
         <form action="#" class="form">
             <div class="input-box">
-                <lable>Full Name</lable>
-                <input type="text"placeholder="Enter full name" required/>
+                <lable for="name">Full Name</lable>
+                <input type="text" id="name" placeholder="Enter full name" required/>
             </div>
             <div class="input-box">
-                <lable>Email Address</lable>
-                <input type="text"placeholder="Enter email address" required/>
+                <lable for="email">Email Address</lable>
+                <input type="email" id="email" placeholder="Enter email address" required/>
             </div>
             <div class="column">
                 <div class="input-box">
-                    <lable>Phone Number</lable>
-                    <input type="number"placeholder="Enter phone number" required/>
+                    <lable for="phone">Phone Number</lable>
+                    <input type="tel" id="phone" placeholder="Enter phone number" required/>
                 </div>
                 <div class="column">
                     <div class="input-box">
-                        <label>Date of Birth</label>
-                        <input type="date"placeholder="Enter date of birth"required/>
+                        <label for="birthday">Date of Birth</label>
+                        <input type="date" id="birthday" name="birthday" placeholder="Enter date of birth"required/>
                     </div>
                 </div>
                 <div class="gender-box">
@@ -47,9 +47,9 @@
                     </div>
                 </div>
                 <div class="input-box address">
-                    <lable>Address</lable>
-                    <input type="text" placeholder="Enter Street address" required/>
-                    <input type="text" placeholder="Enter Street address line 2" required/>
+                    <lable for="street-address">Address</lable>
+                    <input type="text" id="street-address" name="street-address" autocomplete="street-address"  placeholder="Enter Street address" required>
+                    <input type="text" id="address-line2" name="address-line2" autocomplete="address-line2" placeholder="Enter Street address line 2" required/>
                     <div class="column">
                         <div class="select-box">
                             <select>
@@ -68,7 +68,7 @@
                     <input type="number" placeholder="Enter postal code" required/>
                 </div>
             </div>
-            <button>Submit</button>
+            <button input type="submit" >Submit</button>
         </form>
    </section> 
 </body>
